@@ -96,7 +96,6 @@ h6 {
 /*--------------------*/
 
 .header {
-  padding-top: 44px;
   padding-bottom: 41px;
   background-color: #FFFFFF;
 }
@@ -164,9 +163,32 @@ h6 {
   color: #595959;
 }
 
+.page-promo__inner {
+  border-radius: 10px;
+  padding: 68px 0px 68px 70px;
+  background: url("../../img/sushi.png") no-repeat top -139px right -91px/587px;
+  background-color: #ffff80;
+}
+
+.page-promo__title {
+  font-weight: bold;
+  font-size: 39px;
+  color: #302C34;
+  margin-bottom: 15px;
+  line-height: 46px;
+}
+
+.page-promo__text {
+  font-size: 24px;
+  color: #302C34;
+  max-width: 510px;
+  line-height: 28px;
+}
+
 /* ----------------------- */
 
 body {
+  padding-top: 44px;
   font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 

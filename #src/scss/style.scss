@@ -2,10 +2,12 @@
 @import 'null.scss';
 @import 'variable.scss';
 @import 'header.scss';
+@import 'blocks/promo.scss';
 
 
 /* ----------------------- */
 body{
+	padding-top: 44px;
 	font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
 .wrapper{
