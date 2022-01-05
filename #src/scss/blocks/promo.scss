@@ -1,4 +1,4 @@
-.page-promo {
+.promo {
 	&__inner{
 		border-radius: 10px;
 		padding: 68px 0px 68px 70px;
@@ -21,4 +21,6 @@
 		line-height: 28px;
 	}
 }
-
+.promo__page{
+	margin-bottom: 56px;
+}

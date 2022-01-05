@@ -1,0 +1,123 @@
+
+.restuarants-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.restuarants {
+	&__name{
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+	}
+	&__order-time{
+		background: #262626;
+		border-radius: 2px;	
+		color:$white;
+		font-size: 12px;
+		line-height: 20px;
+		padding: 0 8px;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 42px;
+		color: #000000;
+		margin-bottom: 44px;
+	}
+}
+.search-restuarants {
+
+	&__input {
+		width: 306px;
+		min-height: 34px;
+		border: 1px solid #D9D9D9;
+		border-radius: 2px;
+		background: url('../../img/icon/search.svg')  no-repeat center left 11px;
+		padding-left: 37px;
+	}
+}
+
+.restuarants-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.restuarant-card {
+		width: 384px;
+		min-height: 378;
+		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+		border-radius: 7px;
+		overflow: hidden;
+		margin-bottom: 30px;
+
+		&__image {
+			max-width: 384px;
+			min-height: 250px;
+			object-fit: cover;
+		}
+
+		&__top-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 24px 35px 24px;
+		}
+
+		&__title {
+			font-size: 24px;
+			line-height: 32px;
+			color: #000000;
+			font-weight: 700;
+		}
+
+		&__delivery-time {
+			font-size: 12px;
+			line-height: 20px;
+			background: #262626;
+			border-radius: 2px;
+			color:$white;
+			padding: 1px 8px;
+		}
+
+		&__bottom-row {
+			padding-left: 22px;
+			display: flex;
+			align-items: center;
+		}
+
+		&__rating {
+			font-weight: bold;
+			font-size: 18px;
+			color:#FFC107;
+			background: url('../../img/icon/star.svg')  no-repeat;
+			padding-left: 22px;
+			margin-right: 26px;
+		}
+
+		&__price {
+			font-size: 18px;
+			line-height: 32px;
+			color: #8C8C8C;
+			margin-right: 10px;
+		}
+
+		&__category {
+			font-size: 18px;
+			line-height: 32px;
+			color: #8C8C8C;
+		}
+		&__category::before{
+			content:"";
+			width: 5px;
+			height: 5px;
+			border-radius:50%;
+			overflow: hidden;
+			background-color: #8C8C8C;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 10px;
+		}
+}
+
+
