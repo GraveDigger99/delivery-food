@@ -3,6 +3,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 30px;
 }
 .restuarants {
 	&__name{
@@ -23,7 +24,6 @@
 		font-size: 36px;
 		line-height: 42px;
 		color: #000000;
-		margin-bottom: 44px;
 	}
 }
 .search-restuarants {
@@ -44,12 +44,13 @@
 	justify-content: space-between;
 }
 .restuarant-card {
-		width: 384px;
-		min-height: 378;
+		max-width: 384px;
+		min-height: 378px;
 		box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
 		border-radius: 7px;
 		overflow: hidden;
 		margin-bottom: 30px;
+		padding-bottom: 30px;
 
 		&__image {
 			max-width: 384px;
@@ -84,6 +85,7 @@
 			padding-left: 22px;
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 		}
 
 		&__rating {

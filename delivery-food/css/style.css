@@ -114,6 +114,9 @@ h6 {
 
 .address__input {
   width: 690px;
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
   min-height: 40px;
   border: 1px solid #D9D9D9;
   -webkit-box-sizing: border-box;
@@ -166,8 +169,8 @@ h6 {
 .promo__inner {
   border-radius: 10px;
   padding: 68px 0px 68px 70px;
-  background: url("../../img/sushi.png") no-repeat top -139px right -91px/587px;
-  background-color: #ffff80;
+  background: url("../../img/sushi.png") no-repeat top -139px right -91px/570px;
+  background-color: #FFF1B8;
 }
 
 .promo__title {
@@ -199,6 +202,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .restuarants__name {
@@ -221,7 +225,6 @@ h6 {
   font-size: 36px;
   line-height: 42px;
   color: #000000;
-  margin-bottom: 44px;
 }
 
 .search-restuarants__input {
@@ -245,13 +248,14 @@ h6 {
 }
 
 .restuarant-card {
-  width: 384px;
-  min-height: 378;
+  max-width: 384px;
+  min-height: 378px;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
   border-radius: 7px;
   overflow: hidden;
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .restuarant-card__image {
@@ -298,6 +302,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .restuarant-card__rating {
@@ -414,4 +420,366 @@ body {
 .container {
   max-width: 1200px;
   margin: 0px auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+    margin: 0px auto;
+  }
+
+  .address__input {
+    width: 600px;
+  }
+
+  .promo__inner {
+    background: url("../../img/sushi.png") no-repeat top -114px right -132px/534px;
+    background-color: #FFF1B8;
+  }
+
+  .restuarants-cards {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .restuarant-card {
+    max-width: 305px;
+  }
+
+  .restuarant-card__category {
+    font-size: 16px;
+  }
+
+  .restuarant-card__image {
+    max-width: 305px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    margin: 0px auto;
+  }
+
+  .header {
+    padding-bottom: 27px;
+  }
+
+  .address__input {
+    width: 400px;
+  }
+
+  .promo__inner {
+    background: url("../../img/sushi.png") no-repeat top -71px right -125px/437px;
+    background-color: #FFF1B8;
+    padding: 50px 0 55px 43px;
+  }
+
+  .promo__page {
+    margin-bottom: 25px;
+  }
+
+  .promo__text {
+    font-size: 18px;
+    max-width: 400px;
+  }
+
+  .restuarant-card__image {
+    max-width: 360px;
+  }
+
+  .restuarant-card {
+    max-width: 360px;
+  }
+
+  .footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .menu__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 576px;
+  }
+
+  .address__input {
+    max-width: 200px;
+  }
+
+  .restuarant-card__image {
+    max-width: 275px;
+  }
+
+  .restuarant-card {
+    max-width: 275px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .restuarant-card__top-row {
+    padding-bottom: 11px;
+  }
+
+  .restuarant-card__title {
+    font-size: 19px;
+  }
+
+  .restuarant-card__top-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .social {
+    margin-top: 15px;
+    margin-left: auto;
+  }
+
+  .social-link {
+    margin-right: 10px;
+  }
+
+  .menu__list li {
+    margin-right: 10px;
+  }
+
+  .footer__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .promo__title {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .promo__inner {
+    background: url("../../img/sushi.png") no-repeat top -71px right -125px/391px;
+    background-color: #FFF1B8;
+  }
+
+  .promo__text {
+    font-size: 16px;
+    max-width: 330px;
+  }
+
+  .footer__menu {
+    margin-right: 0;
+  }
+
+  .login {
+    font-size: 15px;
+  }
+
+  .shopping {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+
+  .header-row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .bottons {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .address {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 10px;
+  }
+
+  .address__input {
+    max-width: 571px;
+    margin: 0px auto;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 10px;
+  }
+
+  .restuarants-cards {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .restuarant-card {
+    max-width: 384px;
+    margin: 0px auto;
+  }
+
+  .restuarant-card__image {
+    max-width: 384px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    max-width: 100%;
+  }
+
+  .search-restuarants__input {
+    width: 250px;
+  }
+
+  .restuarants__title {
+    font-size: 24px;
+  }
+
+  .promo__inner {
+    background-image: none;
+    background-color: #FFF1B8;
+  }
+
+  .footer__logo {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 15px;
+  }
+
+  .footer__menu {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-top: 15px;
+    margin: 0;
+  }
+
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+
+  .social-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .menu__list li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .promo__inner {
+    padding-right: 43px;
+  }
+
+  .promo__text {
+    max-width: none;
+  }
+
+  .restuarants-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .search-restuarants__input {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .restuarants__title {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 384px) {
+  body {
+    padding-top: 20px;
+  }
+
+  .bottons {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .login {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+    background-position: center left 24px;
+  }
+
+  .shopping {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    background-position: center left 20px;
+  }
+
+  .address__input {
+    text-align: center;
+    background-position: center left 20px;
+  }
+
+  .logo {
+    text-align: center;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-bottom: 15px;
+  }
+
+  .footer__menu {
+    margin-right: 20px;
+  }
+
+  .social {
+    margin-right: 10px;
+  }
+
+  .restuarants__title {
+    font-size: 30px;
+  }
+
+  .promo__title {
+    font-size: 25px;
+  }
+
+  .footer__logo {
+    margin-top: 20px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
 }
