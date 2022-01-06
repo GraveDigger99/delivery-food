@@ -4,12 +4,16 @@
 @import 'header.scss';
 @import 'blocks/promo.scss';
 @import 'blocks/rest.scss';
+@import 'footer.scss';
 
 
 /* ----------------------- */
 body{
 	padding-top: 44px;
 	font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
+}
+.page{
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
 }
 .wrapper{
 	min-height: 100%;
