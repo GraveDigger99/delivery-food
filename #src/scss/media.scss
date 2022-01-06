@@ -22,6 +22,22 @@
 	.restuarant-card__image{
 		max-width: 305px;
 	}
+
+	/*--------------Tanuki-------------------*/
+
+	.restuarant-tanuki{
+		align-items:flex-start;
+	}
+	.tanuki-card{
+		max-width: 305px;
+	}
+	.tanuki-card__category{
+		font-size: 16px;
+	}
+	.tanuki-card__image{
+		max-width: 305px;
+	}
+
 }
 
 @media (max-width:992px) {
@@ -60,6 +76,16 @@
 	.menu__link{
 		font-size: 16px;
 	}
+	
+	/* ------------Tanuki------------------*/
+
+	.tanuki-card__image{
+		max-width: 360px;
+	}
+	.tanuki-card{
+		max-width: 360px;
+	}
+
 }
 
 @media (max-width:767px) {
@@ -119,6 +145,26 @@
 	}
 	.shopping{
 		font-size: 15px;
+	}
+
+	/*------------Tanuki---------------*/
+
+	.tanuki-card__image{
+		max-width: 275px;
+	}
+	.tanuki-card{
+		max-width: 275px;
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.tanuki__top-row{
+		padding-bottom: 11px;
+	}
+	.tanuki-card__title{
+		font-size: 19px;
+	}
+	.tanuki-card__top-row{
+		flex-wrap: wrap;
 	}
 }
 
@@ -209,6 +255,51 @@
 		flex-grow: 1;
 		margin-bottom: 15px;
 	}
+
+	/*------------Tanuki---------------*/
+
+	.restuarant-tanuki__title{
+		text-align: center;
+		flex-grow: 1;
+		margin-bottom: 15px;
+	}
+	.restuarant-tanuki-top{
+		flex-wrap: wrap;
+		align-items:center;
+	}
+	.restuarant-tanuki__title{
+		font-size: 24px;
+		margin: 0;
+	}
+	.tanuki-card{
+		max-width: 384px;
+		margin: 0px auto;
+	}
+	.tanuki-card__image{
+		max-width: 384px;
+		object-fit: cover;
+		max-width: 100%;
+	}
+	.restuarant-tanuki-cards{
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.tanuki-card{
+		max-width: 384px;
+		margin: 0px auto;
+	}
+
+}
+@media (max-width:412px) {
+	.tanuki-card__bottom-row{
+		margin: 0px auto;
+	}
+	.tanuki-card__title{
+		text-align: center;
+	}
+	.tanuki__shopping{
+		margin-right: 50px;
+	}
 }
 @media (max-width:384px) {
 
@@ -255,5 +346,37 @@
 	.footer__logo{
 		margin-top: 20px;
 		flex-basis: 100%;
+	}
+	/*------------Tanuki---------------*/
+
+	.restuarant-tanuki__title{
+		font-size: 30px;
+	}
+	.tanuki-card__bottom-row{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.tanuki-card__category{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.tanuki-card__price{
+		text-align: center;
+	}
+	.tanuki-card__rating{
+		text-align: center;
+		margin-right: 10px;
+	}
+	.tanuki__shopping{
+		background: url('../img/icon/shopping-white.svg') 0 0 no-repeat;
+		background-position: center right 10px ;
+		margin-left: 24px;
+		background-color:$primary;
+		color:$white;
+		padding: 8px 20px 8px 0px;
+	}
+	.shopping{
+		flex-basis:0;
 	}
 }
