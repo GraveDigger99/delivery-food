@@ -6,6 +6,7 @@
 @import 'blocks/rest.scss';
 @import 'footer.scss';
 @import 'tanuki.scss';
+@import 'popup.scss';
 @import 'media.scss';
 
 
@@ -14,14 +15,18 @@ body{
 	padding-top: 44px;
 	font-family: Roboto, "Helvetica Neue", Helvetica, sans-serif;
 }
-.page{
-	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
-}
+
 .wrapper{
 	min-height: 100%;
 	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .container{
 	max-width: 1200px;
 	margin: 0px auto;
+}
+.page{
+	background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+	flex: 1 1 auto;
 }
