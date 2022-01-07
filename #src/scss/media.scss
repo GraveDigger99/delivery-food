@@ -37,6 +37,9 @@
 	.tanuki-card__image{
 		max-width: 305px;
 	}
+	.restuarant-tanuki-top{
+		margin-bottom: 0px;
+	}
 
 }
 
@@ -166,8 +169,77 @@
 	.tanuki-card__top-row{
 		flex-wrap: wrap;
 	}
+	.count{
+		margin: 0 12px;
+	}
+	.food__price{
+		margin-right: 30px;
+		margin-left: 10px;
+	}
 }
-
+@media (max-width:715px) {
+	.popup-footer{
+		flex-wrap: wrap;
+	}
+	.popup-footer__price{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.popup-footer__btn{
+		flex-grow: 1;
+		margin-right: 20px;
+	}
+	.popup-footer__btn_modify{
+		margin-right: 0;
+	}
+}
+@media (max-width:682px) {
+	.popup__content{
+		padding: 40px;
+	}
+	.popup__title{
+		margin-bottom: 25px;
+	}
+}
+@media (max-width:667px) {
+	.food-row{
+		flex-wrap: wrap;
+	}
+	.food-row::after{
+		content:'';
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		background-color: #D9D9D9;
+		top: 88px;
+	}
+	.food__name{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.food__counter{
+		margin-left: auto;
+		
+	}
+	.food__price{
+		margin: 0;
+	}
+	.popup-footer{
+		flex-wrap: wrap;
+	}
+	.popup-footer__price{
+		flex-grow: 1;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.popup-footer__btn-modify{
+		margin-left: auto;
+	}
+}
 @media (max-width:576px) {
 	.container{
 		width: 90%;
@@ -290,6 +362,36 @@
 	}
 
 }
+@media (max-width:540px) {
+	.popup-footer__btn{
+		margin-right: 0;
+	}
+}
+@media (max-width:512px) {
+	.popup-footer__btn{
+		margin: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.popup-footer__btn_modify{
+		margin-top: 15px;
+	}
+}
+@media (max-width:500px) {
+	.popup-footer__btn{
+		width: 100%;
+		text-align: center;
+	}
+	.popup-footer__btn-modify{
+		margin-top: 15px;
+	}
+	.popup__title{
+		font-size: 30px;
+	}
+	.food__name{
+		font-size: 16px;
+	}
+}
 @media (max-width:412px) {
 	.tanuki-card__bottom-row{
 		margin: 0px auto;
@@ -299,6 +401,27 @@
 	}
 	.tanuki__shopping{
 		margin-right: 50px;
+	}
+}
+@media (max-width:385px) {
+	.tanuki-card__bottom{
+		flex-wrap: wrap;
+	}
+	.tanuki__shopping{
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+	.tanuki__price{
+		flex-grow: 1;
+		text-align: center;
+		margin-right: 18px;
+	}
+	.tanuki-card__product-info{
+		text-align: center;
+	}
+	.tanuki-card{
+		padding-bottom: 15px;
 	}
 }
 @media (max-width:384px) {
@@ -377,6 +500,44 @@
 		padding: 8px 20px 8px 0px;
 	}
 	.shopping{
-		flex-basis:0;
+		flex-basis:1;
+	}
+	.popup__content{
+		padding: 15px;
+	}
+	.popup__close{
+		top: 19px;
+		right: 15px;
+	}
+	.footer-row{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.food__counter{
+		order: 2;
+		flex-grow: 1;
+		display: block;
+	}
+	.food__price{
+		order: 3;
+		text-align: center;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.food-row::after{
+		content:'';
+		height: 1px;
+		width: 100%;
+		position: absolute;
+		background-color: #D9D9D9;
+		top: 120px;
+	}
+	.popup-footer{
+		margin-top: 20px;
+	}
+	.food__counter{
+		display: flex;
+		justify-content: center;
 	}
 }

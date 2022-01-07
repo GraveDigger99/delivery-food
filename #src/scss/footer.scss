@@ -27,8 +27,22 @@
 			font-size: 18px;
 			line-height: 21px;
 			color: #595959;
+			display: inline-block;
+		}
+		&__link::after{
+			content:'';
+			display: block;
+			height: 2px;
+			background-color:$primary;
+			transition: 0.2s;
+			width: 0%;
+			
+		}
+		&__link:hover::after{
+			width: 100%;
 		}
 }
+
 .social {
 	display: flex;
 	align-items:center;
